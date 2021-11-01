@@ -3,14 +3,20 @@ v1.0 Created by Donnie Page
 This configuration can deploy a full ANF deployment with fully configured domain services, Windows SMB and Linux NFS capabilities.
 
 #Instructions
-This assumes you have already configured Terraform and are logged into Azure CLI
+If not done already, setup local terraform and CLI.  I would suggest running through the simple tutorial one time before using this code in the lab.
 
-1. Simply change the default values in variables.tf to configure anything specific to your environment such as region.
-2. Run the following command ```terraform apply```
+https://learn.hashicorp.com/tutorials/terraform/install-cli?in=terraform/azure-get-started
+
+
+1. Change the default values in variables.tf (located in this folder) to configure anything specific to your environment such as region.
+
+2. Run 'terraform plan' to review the changes.
+
+3. Run `terraform apply` to apply the changes to the lab
 
 To clean-up the lab
 
-1. Simply run ```Terraform destroy```
+4. Run `terraform destroy` to remove all the infrastructure that was applied within the lab.
 
-If there are any portions of the evironment that you would like to leave out, simply place '#' sign in front of each line of that code. 
+If there are any portions of the evironment that you would like to leave out, place '#' sign in front of each line of that code. 
 

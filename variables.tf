@@ -10,7 +10,6 @@ variable "region" {
 }
 
 variable "subnet_id" {
-  
   type = string
   default = ""
   description = "Use for the subnet ID returned during the network setup"
@@ -60,7 +59,7 @@ variable "username" {
 
 variable "password" {
   type    = string
-  default = "F1r3cr@ck3r"
+  default = "th!sp@ssword1sbad"
   description = "Domain Admin password for Windows AD deployment"
 }
 
